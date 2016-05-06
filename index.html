@@ -1,46 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r76/three.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,400italic,900italic,600,600italic,700italic,700,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
-	
-	<style>
-		html
-		{
-			font-family: 'Source Sans Pro', sans-serif;
-			font-size: 1.25em;
-		}
-		
-		hr.zero
-		{
-			clear:both;
-			border:none;
-		}
-		
-		.box
-		{
-			border:1px gray solid;
-			border-radius:5px;
-			padding:5px;
-			margin:5px;
-		}
-		
-		#sampleArea{display:none}
-	</style>
-</head>
-
-<body>
-	<div id="controlArea" class="box">
+---
+layout: default
+---
+<!-- index.html -->
+<div id="controlArea" class="box">
 		<select>
 			<option>rotationX</option>
 			<option>rotationY</option>
 			<option>rotationZ</option>
 			<option>translate</option>
+			<option>inverse</option>
 		</select>
 		
 		<input type="button" value="add" onclick="Main.onAddClick()">
@@ -57,7 +25,7 @@
 	<div id="sampleArea" class="box">
 	
 		<div class="box rotationX">
-			rotation X <input>
+			rotation X <input type="number">
 		</div>
 		
 		<div class="box rotationY">
@@ -71,8 +39,10 @@
 		<div class="box translate">
 			translate <input><input><input>
 		</div>
+		
+		<div class="box inverse">
+			inverse
+		</div>
 			
 	</div>
-	
-</body>
-</html>
+<!-- index.html -->

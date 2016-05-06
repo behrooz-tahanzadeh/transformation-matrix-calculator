@@ -58,7 +58,16 @@ var Main =
 				
 				m = m.multiply(t)
 			}
+			else if(e.hasClass("inverse"))
+			{
+				m.getInverse(m)
+			}
 		}
+		
+		m = m.transpose();
+		
+		for(var i=0; i<m.elements.length; ++i)
+			m.elements[i] = Math.round(m.elements[i]*1000000000)/1000000000
 		
 		jQuery("#resultArea").html(m.elements.toString());
 	}

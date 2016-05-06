@@ -1,0 +1,3 @@
+- src: "http://code.jquery.com/jquery-2.0.3.min.js"
+- src: "https://cdnjs.cloudflare.com/ajax/libs/three.js/r76/three.js"
+- src: "assets/js/Main.js"
